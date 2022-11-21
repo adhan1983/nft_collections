@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "nft_collections",
+    "slug": "nft_collections",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "nft_collections"
+}
