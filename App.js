@@ -12,31 +12,31 @@ export default function App() {
   
   return (    
 
-    <NavigationContainer>
-      <Text style={{textAlign:'center'}}>Teste</Text>
-    </NavigationContainer>
     // <NavigationContainer>
-    //     <Tab.Navigator>
-    //       <Tab.Screen
-    //         options={{
-    //           tabBarIcon: ({size, color}) => (
-    //             <Icon name="home" size={size} color={color} />
-    //           ),
-    //         }}
-    //         name="Home"
-    //         component={HomeScreen}
-    //       />
-    //       <Tab.Screen
-    //         options={{
-    //           tabBarIcon: ({size, color}) => (
-    //             <Icon name="cogs" size={size} color={color} />
-    //           ),
-    //         }}
-    //         name="Test"
-    //         component={HomeScreen}
-    //       />
-    //     </Tab.Navigator>
-    //   </NavigationContainer>
+    //   <Text style={{textAlign:'center'}}>Teste</Text>
+    // </NavigationContainer>
+    <NavigationContainer>
+        <Tab.Navigator>
+          <Tab.Screen
+            options={{
+              tabBarIcon: ({size, color}) => (
+                <Icon name="home" size={size} color={color} />
+              ),
+            }}
+            name="Home"
+            component={HomeScreen}
+          />
+          <Tab.Screen
+            options={{
+              tabBarIcon: ({size, color}) => (
+                <Icon name="cogs" size={size} color={color} />
+              ),
+            }}
+            name="Test"
+            component={HomeScreen}
+          />
+        </Tab.Navigator>
+      </NavigationContainer>
   );
 
 }
