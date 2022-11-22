@@ -1,21 +1,43 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import HomeScreen from '../nft_collections/containers/HomeScreen';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+
+const Tab = createBottomTabNavigator();
+
+export default function App() {  
+  
+  return (    
+
+    <NavigationContainer>
+      <Text style={{textAlign:'center'}}>Teste</Text>
+    </NavigationContainer>
+    // <NavigationContainer>
+    //     <Tab.Navigator>
+    //       <Tab.Screen
+    //         options={{
+    //           tabBarIcon: ({size, color}) => (
+    //             <Icon name="home" size={size} color={color} />
+    //           ),
+    //         }}
+    //         name="Home"
+    //         component={HomeScreen}
+    //       />
+    //       <Tab.Screen
+    //         options={{
+    //           tabBarIcon: ({size, color}) => (
+    //             <Icon name="cogs" size={size} color={color} />
+    //           ),
+    //         }}
+    //         name="Test"
+    //         component={HomeScreen}
+    //       />
+    //     </Tab.Navigator>
+    //   </NavigationContainer>
   );
+
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
