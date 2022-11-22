@@ -14,9 +14,8 @@ const Collection = () => {
 
     return (       
         <SafeAreaView>
-            <SearchBox />  
-            
-            {/* <ArtCollectionList collections={data.collections} searchCriteria={searchCriteria} /> */}
+            <SearchBox />
+            <ArtCollectionList collections={data.collections} searchCriteria={searchCriteria} />
         </SafeAreaView>           
         
     );
